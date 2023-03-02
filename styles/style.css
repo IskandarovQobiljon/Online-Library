@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+.menu-bar {
+    background: rgb(112, 187, 107);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    padding: 15px;
+    margin: 15px;
+    transition: .5s;
+    list-style: none;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-bar ul li:hover {
+    background: rgb(0, 255, 0, 0.5);
+    border-radius: 5px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: fixed;
+    background: rgb(0, 255, 0);
+    margin-top: 15px;
+    padding-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 2px dotted #000;
+    background: transparent;
+    border-radius: 6px;
+    text-align: left;
+}
+
+
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #b2ff00;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 100px;
+    background: rgb(0, 255, 0);
+}
+
+/* ---------- about ------------ */
+
+.content {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+.content .title {
+    color: #1f1f25;
+    font-size: 15px;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%,
+            #7644ff 50.19%, #fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content h1 {
+    color: #1f1f25;
+    font-size: 75px;
+    line-height: 90px;
+    text-transform: capitalize;
+    width: 70%;
+}
+
+.content h1 span {
+    color: #fd4766;
+}
+
+.content p {
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 400px;
+    height: auto;
+    margin-left: 45rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.5);
+}
+
+.btn {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 15px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: .4s;
+    background-size: 152% 100%;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+}
+
+.btn:hover {
+    background: transparent;
+    border-color: #fd4766;
+    color: #fd4766
+}
+
+/* --------- contain ---------- */
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.logo img {
+    width: 300px;
+    height: 250px;
+
+}
+
+.logo h4 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.logo h4 a {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #fd4766;
+    padding: 12px 15px;
+    border-radius: 500px;
+    background: #fd4766;
+    text-transform: capitalize;
+    transition: .4s ease-in;
+}
+
+.logo h4 a:hover {
+    color: #fd4766;
+    background: #fff;
+    border-color: #002df5;
+}
+
+
+
+/*---------------blog-----------------*/
+
+.blog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100vw;
+    justify-content: center;
+    text-align: center;
+    background:rgb(137, 236, 94);
+    padding: 50px;
+}
+
+.image {
+    margin: 20px;
+    padding: 10px;
+}
+.image img {
+    width: 20rem;
+    height:15rem;
+    border: 2px solid #fff;
+}
+
+.image h4 {
+    font-size: 16px;
+    color: rgb(0, 26, 255);
+    margin: 8px;
+}
+
+.image a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    text-transform: capitalize;
+    padding:5px 25px;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 255, 21);
+    background: rgb(0, 255, 21);
+    transition: .5s ease;
+}
+
+.image a:hover {
+    background: #fff;
+    border-color: #000;
+
+}
+
+/*----------------footer--------------------*/
+.element {
+    background: rgb(0, 0, 0, 0.5);
+}
+
+
+.element ul {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.element ul li {
+    width: 120px;
+    padding: 25px;
+    margin: 10px;
+    transition: .5s;
+    list-style: none;
+    text-transform: capitalize;
+
+}
+
+.element ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.element h3 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.element p {
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
